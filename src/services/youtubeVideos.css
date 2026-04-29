@@ -1,0 +1,63 @@
+
+.youtube-container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.youtube-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.video-content {
+  padding: 15px;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.video-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+/* Medium and larger screens */
+
+@media (min-width: 768px) {
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
